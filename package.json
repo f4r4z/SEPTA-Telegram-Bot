@@ -1,0 +1,15 @@
+{
+  "name": "SEPTA Telegram Bot",
+  "version": "1.0.0",
+  "description": "Checks septa's live data for users",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Faraz Heravi",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^4.0.0",
+    "telebot": "^1.2.3"
+  }
+}
