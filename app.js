@@ -82,7 +82,7 @@ bot.on('text', msg => {
 
 		for (var i = 0; i < trainData.data.length; i++) {
 			var number = trainData.data[i].trainno;
-	   		if(number == msg.text) {
+	   		if(number == msg.text || number == msg.text + ".") {
 	   			var chosen = trainData.data[i];
 				return bot.sendMessage(msg.from.id, 
 					"Source: " + chosen.SOURCE +	
