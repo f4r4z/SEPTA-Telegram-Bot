@@ -2,6 +2,8 @@
 
 A simple Telegram bot that returns up-to-dated **Regional Rail** information
 
+[![GitHub release](https://img.shields.io/github/release/f4r4z/SEPTA-Telegram-Bot.svg)](https://github.com/f4r4z/SEPTA-Telegram-Bot/releases)
+
 > This Telegram bot helps SEPTA users to keep track of delays, train's source and destination, and etc.
 
 ## How to Use It?
@@ -35,19 +37,21 @@ user:
 
 bot: 
 ```  
+Train has a delay of 10 minute(s)
 Source: Doylestown
 Destination: Malvern
 Service: LOCAL
 Next Stop: Overbrook
 Line: Paoli/Thorndale
-Train has a delay of 10 minute(s)
 Train's possible track:_
+Exact location in Google Maps:
+[Google Maps URL]
 ```
 ## Built With
 * [TeleBot](https://github.com/mullwar/telebot)- The easy way to write Telegram bots in Node.js
 * [IsSeptaFcked API](https://github.com/dmuth/IsSeptaFcked)- A website that determines if SEPTA is f*cked or not.
 
-## Acknowledgement
+## Acknowledgements
 
 Thanks to [dmuth](https://github.com/dmuth) for the Regional Rail SEPTA API and inspiration.
 
