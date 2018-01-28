@@ -1,6 +1,6 @@
 {
   "name": "SEPTA Telegram Bot",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Checks septa's live data for users",
   "main": "app.js",
   "scripts": {

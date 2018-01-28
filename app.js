@@ -76,6 +76,12 @@ bot.on('/trainno', msg => {
 		
 }); 
 
+bot.on('/schedules', msg => {
+		
+	return bot.sendMessage(msg.from.id, "http://www.septa.org/schedules/rail/");
+		
+}); 
+
 
 //returns train data
 bot.on('text', msg => {
@@ -84,19 +90,21 @@ bot.on('text', msg => {
 			var number = trainData.data[i].trainno;
 	   		if(number == msg.text || number == msg.text + ".") {
 	   			var chosen = trainData.data[i];
-				return bot.sendMessage(msg.from.id, 
-					"Source: " + chosen.SOURCE +	
+				return bot.sendMessage(msg.from.id,
+					"Train has a delay of " + chosen.late + " minute(s)" +
+					"\nSource: " + chosen.SOURCE +	
 					"\nDestination: " + chosen.dest +
 					"\nService: " + chosen.service +
 					"\nNext Stop: " + chosen.nextstop +
 					"\nLine: " + chosen.line +
-					"\nTrain has a delay of " + chosen.late + " minute(s)" +
-					"\nTrain's possible track: " + chosen.TRACK + "_" + chosen.TRACK_CHANGE
+					"\nTrain's possible track: " + chosen.TRACK + "_" + chosen.TRACK_CHANGE +
+					"\nExact location in Google Maps: \nwww.google.com/maps/search/" + chosen.lat + "," + chosen.lon
 				);
 	   		}
 		}
 	
 });
+
 
 //starts bot
 bot.start();
